@@ -1,0 +1,63 @@
+@import url(Variables.css);
+
+.user-card{
+    display: flex;
+    align-items: center;
+    color: var(--text-color);
+    font-size: var(--font-size-smoll);
+    justify-content: space-between;
+}
+
+.user-card__header{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.user-card__info{
+    display: flex;
+    flex-direction: column;
+}
+
+.user-card__username{
+    opacity: .6;
+}
+
+.user-card__avatar{
+    width: 48px;
+    height: 48px;
+    border-radius: 1000px;
+}
+
+.user-card__follow-buttom{
+    margin-left: 16px;
+    border: 0;
+    border-radius: 999px;
+    padding: var(--button-padding);
+    font-weight: bold;
+    cursor: pointer;
+}
+.user-card__follow-buttom.is-following{
+    border: 1px solid red;
+    background: red;
+    color: #fff;
+    width: 130px;
+}
+.user-card__follow-buttom.is-following:hover{
+    background-color: blueviolet;
+}
+
+.is-following-hover{
+    display: none;
+}
+.user-card__follow-buttom:hover{
+    background-color:rgb(150, 255, 220);
+    transition: .3s ease all;
+    
+}
+.user-card__follow-buttom.is-following:hover .is-following-hover{
+    display: block;
+}
+.user-card__follow-buttom.is-following:hover .not-following-hover{
+    display: none;
+}
