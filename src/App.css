@@ -41,7 +41,7 @@
     border: 1px solid red;
     background: red;
     color: #fff;
-    width: 130px;
+    width: 140px;
 }
 .user-card__follow-buttom.is-following:hover{
     background-color: blueviolet;
